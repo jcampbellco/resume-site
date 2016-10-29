@@ -3,6 +3,10 @@
 #
 # https://github.com/dockerfile/nginx
 #
+# cd ~/resume-site
+# docker build containers/web -t jcampbell.co
+# docker run -v /home/admin/resume-site/app/:/usr/share/nginx/html -d -p 8080:80 jcampbell.co
+#
 
 # Pull base image.
 FROM centos:7
@@ -24,7 +28,6 @@ WORKDIR /etc/nginx
 
 # Define default command.
 CMD ["nginx"]
-#CMD ["tail", "-f", "/dev/null"]
 
 # Expose ports.
 EXPOSE 80 443
