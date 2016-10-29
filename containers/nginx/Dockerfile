@@ -5,7 +5,7 @@
 #
 # cd ~/resume-site
 # docker build containers/web -t jcampbell.co
-# docker run -v /home/admin/resume-site/app/:/usr/share/nginx/html -d -p 8080:80 jcampbell.co
+# docker run -v /home/admin/resume-site/app/:/usr/share/nginx/html -d -p 8080:80 -p 4443:443 jcampbell.co
 #
 
 # Pull base image.
